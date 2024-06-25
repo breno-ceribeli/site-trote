@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trote Solidário 2024</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="script/script.js"></script>
+        <script src="script/calculadora.js"></script>
+        <link rel="shortcut icon" href="assets/favicon.ico">
+    </head>
+    <body>
+        <div class="scroll-up-btn">
+            <i class="fas fa-angle-up"></i>
+        </div>
+        <!-- Barra de Navegação -->
+        <nav class="navbar">
+            <div class="max-width">
+                <div class="logo"><a href="index.html"><img id="logo" src="assets/logobranca.png" alt="Logo da UNIFACEF"></a></div>
+                <ul class="menu">
+                    <li><a href="introducao.html">Introdução</a></li>
+                    <li><a href="index.html#objetivo" class="menu-btn">Objetivo</a></li>
+                    <li><a href="index.html#etapas" class="menu-btn">Etapas</a></li>
+                    <li><a href="calculadora.html">Calculadora</a></li>
+                    <li><a href="obs.html">Observações finais</a></li>
+                    <li><a href="index.html#equipe">Equipe</a></li>
+                </ul>
+                <div class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Conteúdo -->
+        <section class="intro">
+            <h2 class="title6">Calculadora de Pontos</h2>
+            <div class="max-width">
+                <div class="intro-cont">
+                    <div class="left2">
+                        <!-- Atributo "required" usado apenas para fins de estilização -->
+                        <div class="points-space">
+                            <input type="number" id="kits" required title="">
+                            <label for="kits">KITS</label>
+                        </div>
+                        <div class="points-space">
+                            <input type="number" id="supl" required title="">
+                            <label for="supl">SUPLEMENTOS</label>
+                        </div>
+                        <div class="check-space">
+                            <input type="checkbox" id="color">
+                            <label for="color">CARACTERIZAÇÃO DE COR</label>
+                        </div>
+                        <div class="points-space">
+                            <input type="number" id="leite" required title="">
+                            <label for="leite">LEITE</label>
+                        </div>
+                        <div class="points-space">
+                            <input type="number" id="arroz5" required title="">
+                            <label for="arroz5">ARROZ 5kg</label>
+                        </div>
+                        <div class="points-space">
+                            <input type="number" id="arroz1" required title="">
+                            <label for="arroz1">ARROZ 1kg</label>
+                        </div>
+                        <div class="points-space">
+                            <input type="number" id="feijao2" required title="">
+                            <label for="feijao2">FEIJÃO 2kg</label>
+                        </div>
+                        <div class="points-space">
+                            <input type="number" id="feijao1" required title="">
+                            <label for="feijao1">FEIJÃO 1kg</label>
+                        </div>
+                        <div class="points-space">
+                            <input type="number" id="macarrao" required title="">
+                            <label for="macarrao">MACARRÃO 500gr</label>
+                        </div>
+                        <div class="points-space">
+                            <input type="number" id="oleo" required title="">
+                            <label for="oleo">ÓLEO 900ml</label>
+                        </div>
+                        <div class="points-space">
+                            <input type="number" id="sangue" required title="">
+                            <label for="sangue">SANGUE</label>
+                        </div>
+                        <div class="points-space">
+                            <input type="number" id="relat" required title="">
+                            <label for="relat">AÇÃO SOCIAL</label>
+                        </div>
+                        <div class="points-space">
+                            <input type="number" id="music" required title="">
+                            <label for="music">APRESENTAÇÃO</label>
+                        </div>
+                        <div class="points-space">
+                            <input type="number" id="mascote" required title="">
+                            <label for="mascote">MASCOTE</label>
+                        </div>
+                        <div class="points-space">
+                            <input type="number" id="quiz" required title="">
+                            <label for="quiz">QUIZ</label>
+                        </div>
+                        <div class="points-space">
+                            <input type="number" id="extra" required title="">
+                            <label for="extra">PONTUAÇÃO EXTRA</label>
+                        </div>
+                        <div class="points-space">
+                            <input type="number" id="perdas" required title="">
+                            <label for="perdas">PONTOS PERDIDOS</label>
+                        </div>
+                    </div>
+                    <div class="right2">
+                        <div class="right-side">
+                            <div class="buttons yellowbtn">
+                                <button type="button" onclick="amarela()"><span>Amarela</span></button>
+                            </div>
+                            <p id="yresultado"></p>
+                        </div>
+                        <div class="right-side">
+                            <div class="buttons orangebtn">
+                                <button type="button" onclick="laranja()"><span>Laranja</span></button>
+                            </div>
+                            <p id="oresultado"></p>
+                        </div>
+                        <div class="right-side">
+                            <div class="buttons purplebtn">
+                                <button type="button" onclick="roxa()"><span>Roxa</span></button>
+                            </div>
+                            <p id="presultado"></p>
+                        </div>
+                        <div class="right-side">
+                            <div class="buttons greenbtn">
+                                <button type="button" onclick="verde()"><span>Verde</span></button>
+                            </div>
+                            <p id="gresultado"></p>
+                        </div>
+                        <div class="right-side">
+                            <div class="buttons redbtn">
+                                <button type="button" onclick="vermelha()"><span>Vermelha</span></button>
+                            </div>
+                            <p id="rresultado"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Começo do Rodapé -->
+        <footer>
+            <span>Feito por alunos da Turma VIII de Bacharelado de Engenharia de Software do 
+                <a class="site" href="https://www.unifacef.com.br/" target="_blank">Uni-FACEF</a> | Trote Solidário 2024 | 
+                <a href="https://github.com/breno-ceribeli" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/unifacef/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@tvunifacef" target="_blank"><i class="fab fa-youtube"></i></a><a href="https://www.linkedin.com/school/uni-facef/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </span>
+        </footer>
+    </body>
+</html>
